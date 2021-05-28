@@ -1,6 +1,5 @@
 {
   "hosting": {
-    "site": "solainetwork.com",
     "public": "build",
     "ignore": [
       "firebase.json",
