@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1500" height="500" viewBox="0 0 1500 500">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#0cf1a7"/>
+      <stop offset="1" stop-color="#d822fd"/>
+    </linearGradient>
+  </defs>
+  <g id="poster" transform="translate(-282 -422)">
+    <g id="Rectangle_2" data-name="Rectangle 2" transform="translate(282 422)" stroke="#707070" stroke-width="1" fill="url(#linear-gradient)">
+      <rect width="1500" height="500" stroke="none"/>
+      <rect x="0.5" y="0.5" width="1499" height="499" fill="none"/>
+    </g>
+    <text id="SOLANA_X_SINE" data-name="SOLANA X SINE" transform="translate(1032 733)" fill="#fff" font-size="184" font-family="SegoeUI, Segoe UI"><tspan x="-645.123" y="0">SOLANA X SINE</tspan></text>
+  </g>
+</svg>
