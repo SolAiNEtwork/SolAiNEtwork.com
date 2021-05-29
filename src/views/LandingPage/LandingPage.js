@@ -63,7 +63,10 @@ export default function LandingPage(props) {
           </Grid>
         </div>
       </Parallax>
-      <div className={classNames(classes.main, classes.mainRaised)}>
+      <div
+        className={classNames(classes.main, classes.mainRaised)}
+        style={{ marginTop: "50px" }}
+      >
         <div className={classes.container}>
           <ProductSection />
         </div>
