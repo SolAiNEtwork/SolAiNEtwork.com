@@ -12,6 +12,7 @@ import Header from "components/Header/Header.js";
 import HeaderLinks from "components/Header/HeaderLinks.js";
 
 import styles from "assets/jss/material-kit-react/views/landingPage.js";
+import "./LandingPage.scss";
 
 // Sections for this page
 import ProductSection from "./Sections/ProductSection.js";
@@ -56,7 +57,10 @@ export default function LandingPage(props) {
               <div style={{ width: "100%", padding: "32px" }}>
                 <img
                   src={require("assets/img/circle_icon.svg").default}
-                  style={{ width: "100%" }}
+                  style={{
+                    width: "100%",
+                  }}
+                  className="rotate"
                 />
               </div>
             </Grid>
