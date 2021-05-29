@@ -43,6 +43,9 @@ export default function LandingPage(props) {
         <div className={classes.container}>
           <GridContainer>
             <GridItem xs={12} sm={12} md={6}>
+              <img src={require("assets/img/circle_icon.svg").default} />
+            </GridItem>
+            <GridItem xs={12} sm={12} md={6}>
               <h1 className={classes.title}>
                 Redefining Work, Fostering Opportunities
               </h1>
