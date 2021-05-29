@@ -64,7 +64,17 @@ export default function LandingPage(props) {
                 />
               </div>
             </Grid>
-            <Grid item xs={12} sm={12} md={6}>
+            <Grid
+              item
+              xs={12}
+              sm={12}
+              md={6}
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "center",
+              }}
+            >
               <h1 className={classes.title} style={{ textAlign: "center" }}>
                 $INE: Redefining Work, Fostering Opportunities
               </h1>
@@ -80,7 +90,7 @@ export default function LandingPage(props) {
       </div>
       <div
         className={classNames(classes.main, classes.mainRaised)}
-        style={{ marginTop: "50px" }}
+        style={{ marginTop: "50px", marginBottom: "32px" }}
       >
         <div className={classes.container}>
           <ProductSection />
