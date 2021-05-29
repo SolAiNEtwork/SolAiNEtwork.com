@@ -3,13 +3,12 @@ import React from "react";
 import classNames from "classnames";
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
+import Grid from "@material-ui/core/Grid";
 
 // @material-ui/icons
 
 // core components
 import Header from "components/Header/Header.js";
-import GridContainer from "components/Grid/GridContainer.js";
-import GridItem from "components/Grid/GridItem.js";
 import HeaderLinks from "components/Header/HeaderLinks.js";
 import Parallax from "components/Parallax/Parallax.js";
 
@@ -41,11 +40,16 @@ export default function LandingPage(props) {
       />
       <Parallax filter image={require("assets/img/poster.svg").default}>
         <div className={classes.container}>
-          <GridContainer>
-            <GridItem xs={12} sm={12} md={6}>
-              <img src={require("assets/img/circle_icon.svg").default} />
-            </GridItem>
-            <GridItem xs={12} sm={12} md={6}>
+          <Grid container>
+            <Grid item xs={12} sm={12} md={6}>
+              <div style={{ width: "100%", padding: "32px" }}>
+                <img
+                  src={require("assets/img/circle_icon.svg").default}
+                  style={{ width: "100%" }}
+                />
+              </div>
+            </Grid>
+            <Grid item xs={12} sm={12} md={6}>
               <h1 className={classes.title}>
                 Redefining Work, Fostering Opportunities
               </h1>
@@ -55,8 +59,8 @@ export default function LandingPage(props) {
                 which will connect your work to a distributed workforce.
               </h4>
               <br />
-            </GridItem>
-          </GridContainer>
+            </Grid>
+          </Grid>
         </div>
       </Parallax>
       <div className={classNames(classes.main, classes.mainRaised)}>

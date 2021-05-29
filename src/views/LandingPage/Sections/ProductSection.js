@@ -24,8 +24,8 @@ export default function ProductSection() {
           <h2 className={classes.title}>Our Mission</h2>
           <h5 className={classes.description}>
             Our mission is to create a ZERO commission platform for
-            crowd-sourcing. You can can get their work done fast through AI or
-            in a distributed manner through crowd-sourcing. You can also do the
+            crowd-sourcing. You can can get your work done fast through AI or in
+            a distributed manner through crowd-sourcing. You can also do the
             work as per your skills and earn SINE.
           </h5>
         </GridItem>
