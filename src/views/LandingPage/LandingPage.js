@@ -51,7 +51,7 @@ export default function LandingPage(props) {
             </Grid>
             <Grid item xs={12} sm={12} md={6}>
               <h1 className={classes.title}>
-                Redefining Work, Fostering Opportunities
+                SINE: Redefining Work, Fostering Opportunities
               </h1>
               <h4>
                 SINE is the token to get your work done using Artificial
