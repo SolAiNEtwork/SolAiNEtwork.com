@@ -10,7 +10,6 @@ import Grid from "@material-ui/core/Grid";
 // core components
 import Header from "components/Header/Header.js";
 import HeaderLinks from "components/Header/HeaderLinks.js";
-import Parallax from "components/Parallax/Parallax.js";
 
 import styles from "assets/jss/material-kit-react/views/landingPage.js";
 
@@ -38,8 +37,20 @@ export default function LandingPage(props) {
         }}
         {...rest}
       />
-      <Parallax filter image={require("assets/img/poster.svg").default}>
-        <div className={classes.container}>
+      <div
+        style={{
+          backgroundImage:
+            "url(" + require("assets/img/poster.svg").default + ")",
+          backgroundSize: "cover",
+        }}
+      >
+        <div
+          className={classes.container}
+          style={{
+            paddingTop: "100px",
+            paddingBottom: "100px",
+          }}
+        >
           <Grid container>
             <Grid item xs={12} sm={12} md={6}>
               <div style={{ width: "100%", padding: "32px" }}>
@@ -50,10 +61,10 @@ export default function LandingPage(props) {
               </div>
             </Grid>
             <Grid item xs={12} sm={12} md={6}>
-              <h1 className={classes.title}>
-                SINE: Redefining Work, Fostering Opportunities
+              <h1 className={classes.title} style={{ textAlign: "center" }}>
+                $INE: Redefining Work, Fostering Opportunities
               </h1>
-              <h4>
+              <h4 style={{ textAlign: "center" }}>
                 SINE is the token to get your work done using Artificial
                 Intelligence and crowd-sourcing. We are creating a platform
                 which will connect your work to a distributed workforce.
@@ -62,7 +73,7 @@ export default function LandingPage(props) {
             </Grid>
           </Grid>
         </div>
-      </Parallax>
+      </div>
       <div
         className={classNames(classes.main, classes.mainRaised)}
         style={{ marginTop: "50px" }}
