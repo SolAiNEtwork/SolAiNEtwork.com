@@ -8,10 +8,8 @@ import { makeStyles } from "@material-ui/core/styles";
 
 // core components
 import Header from "components/Header/Header.js";
-import Footer from "components/Footer/Footer.js";
 import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
-import Button from "components/CustomButtons/Button.js";
 import HeaderLinks from "components/Header/HeaderLinks.js";
 import Parallax from "components/Parallax/Parallax.js";
 
@@ -19,8 +17,6 @@ import styles from "assets/jss/material-kit-react/views/landingPage.js";
 
 // Sections for this page
 import ProductSection from "./Sections/ProductSection.js";
-import TeamSection from "./Sections/TeamSection.js";
-import WorkSection from "./Sections/WorkSection.js";
 
 const dashboardRoutes = [];
 
@@ -34,7 +30,7 @@ export default function LandingPage(props) {
       <Header
         color="transparent"
         routes={dashboardRoutes}
-        brand="Material Kit React"
+        brand="Solana Artificial Intelligence Network"
         rightLinks={<HeaderLinks />}
         fixed
         changeColorOnScroll={{
@@ -43,28 +39,22 @@ export default function LandingPage(props) {
         }}
         {...rest}
       />
-      <Parallax filter image={require("assets/img/landing-bg.jpg").default}>
+      <Parallax filter image={require("assets/img/poster.svg").default}>
         <div className={classes.container}>
           <GridContainer>
             <GridItem xs={12} sm={12} md={6}>
-              <h1 className={classes.title}>Your Story Starts With Us.</h1>
+              <img src={require("assets/img/circle_icon.svg").default} />
+            </GridItem>
+            <GridItem xs={12} sm={12} md={6}>
+              <h1 className={classes.title}>
+                Redefining Work, Fostering Opportunities
+              </h1>
               <h4>
-                Every landing page needs a small description after the big bold
-                title, that{"'"}s why we added this text here. Add here all the
-                information that can make you or your product create the first
-                impression.
+                SINE is the token to get your work done using Artificial
+                Intelligence and crowd-sourcing. We are creating a platform
+                which will connect your work to a distributed workforce.
               </h4>
               <br />
-              <Button
-                color="danger"
-                size="lg"
-                href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ref=creativetim"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i className="fas fa-play" />
-                Watch video
-              </Button>
             </GridItem>
           </GridContainer>
         </div>
@@ -72,11 +62,8 @@ export default function LandingPage(props) {
       <div className={classNames(classes.main, classes.mainRaised)}>
         <div className={classes.container}>
           <ProductSection />
-          <TeamSection />
-          <WorkSection />
         </div>
       </div>
-      <Footer />
     </div>
   );
 }

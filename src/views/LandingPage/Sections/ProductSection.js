@@ -3,9 +3,9 @@ import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 
 // @material-ui/icons
-import Chat from "@material-ui/icons/Chat";
-import VerifiedUser from "@material-ui/icons/VerifiedUser";
 import Fingerprint from "@material-ui/icons/Fingerprint";
+import ExposureZeroIcon from "@material-ui/icons/ExposureZero";
+import FlashOnIcon from "@material-ui/icons/FlashOn";
 // core components
 import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
@@ -21,13 +21,12 @@ export default function ProductSection() {
     <div className={classes.section}>
       <GridContainer justify="center">
         <GridItem xs={12} sm={12} md={8}>
-          <h2 className={classes.title}>Let{"'"}s talk product</h2>
+          <h2 className={classes.title}>Our Mission</h2>
           <h5 className={classes.description}>
-            This is the paragraph where you can write more details about your
-            product. Keep you user engaged by providing meaningful information.
-            Remember that by this time, the user is curious, otherwise he wouldn
-            {"'"}t scroll to get here. Add a button if you want the user to see
-            more.
+            Our mission is to create a ZERO commission platform for
+            crowd-sourcing. You can can get their work done fast through AI or
+            in a distributed manner through crowd-sourcing. You can also do the
+            work as per your skills and earn SINE.
           </h5>
         </GridItem>
       </GridContainer>
@@ -35,26 +34,26 @@ export default function ProductSection() {
         <GridContainer>
           <GridItem xs={12} sm={12} md={4}>
             <InfoArea
-              title="Free Chat"
-              description="Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough."
-              icon={Chat}
+              title="0 Commission"
+              description="We won't charge a single penny for the work matched through our platform."
+              icon={ExposureZeroIcon}
               iconColor="info"
               vertical
             />
           </GridItem>
           <GridItem xs={12} sm={12} md={4}>
             <InfoArea
-              title="Verified Users"
-              description="Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough."
-              icon={VerifiedUser}
+              title="Lightening Speed"
+              description="Distributing your work over our network give us speed to get the work done quickly."
+              icon={FlashOnIcon}
               iconColor="success"
               vertical
             />
           </GridItem>
           <GridItem xs={12} sm={12} md={4}>
             <InfoArea
-              title="Fingerprint"
-              description="Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough."
+              title="Fully Secure"
+              description="Backed up by the security of blockchain and our algorithms, you get your work done securely and worker will get paid securely."
               icon={Fingerprint}
               iconColor="danger"
               vertical
