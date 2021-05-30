@@ -99,6 +99,30 @@ export default function HeaderLinks(props) {
           </Button>
         </Tooltip>
       </ListItem>
+      <ListItem
+        className={classes.listItem}
+        style={{
+          height: "50px",
+          display: "flex",
+          alignItems: "center",
+        }}
+      >
+        <Tooltip
+          id="telegram-link"
+          title="Join us on telegram"
+          placement={window.innerWidth > 959 ? "top" : "left"}
+          classes={{ tooltip: classes.tooltip }}
+        >
+          <Button
+            href="https://t.me/SolAiNetwork"
+            target="_blank"
+            color="transparent"
+            className={classes.navLink}
+          >
+            <i className={classes.socialIcons + " fab fa-telegram"} />
+          </Button>
+        </Tooltip>
+      </ListItem>
     </List>
   );
 }
