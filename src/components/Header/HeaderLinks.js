@@ -35,17 +35,19 @@ export default function HeaderLinks(props) {
           placement={window.innerWidth > 959 ? "top" : "left"}
           classes={{ tooltip: classes.tooltip }}
         >
-          <HashLink
-            to="/#our-mission"
-            className={classes.dropdownLink}
-            style={{
-              fontSize: "24px",
-              fontWeight: "500",
-              fontFamily: `"Roboto Slab", "Times New Roman", serif`,
-            }}
-          >
-            Mission
-          </HashLink>
+          <Button color="transparent" className={classes.navLink}>
+            <HashLink
+              to="/#our-mission"
+              className={classes.dropdownLink}
+              style={{
+                fontSize: "18px",
+                fontWeight: "500",
+                fontFamily: `"Roboto Slab", "Times New Roman", serif`,
+              }}
+            >
+              Mission
+            </HashLink>
+          </Button>
         </Tooltip>
       </ListItem>
       <ListItem
@@ -62,17 +64,19 @@ export default function HeaderLinks(props) {
           placement={window.innerWidth > 959 ? "top" : "left"}
           classes={{ tooltip: classes.tooltip }}
         >
-          <HashLink
-            to="/#tokenomics"
-            className={classes.dropdownLink}
-            style={{
-              fontSize: "24px",
-              fontWeight: "500",
-              fontFamily: `"Roboto Slab", "Times New Roman", serif`,
-            }}
-          >
-            Tokenomics
-          </HashLink>
+          <Button color="transparent" className={classes.navLink}>
+            <HashLink
+              to="/#tokenomics"
+              className={classes.dropdownLink}
+              style={{
+                fontSize: "18px",
+                fontWeight: "500",
+                fontFamily: `"Roboto Slab", "Times New Roman", serif`,
+              }}
+            >
+              Tokenomics
+            </HashLink>
+          </Button>
         </Tooltip>
       </ListItem>
       <ListItem
