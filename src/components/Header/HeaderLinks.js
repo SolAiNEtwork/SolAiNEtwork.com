@@ -14,7 +14,6 @@ import Tooltip from "@material-ui/core/Tooltip";
 import Button from "components/CustomButtons/Button.js";
 
 import styles from "assets/jss/material-kit-react/components/headerLinksStyle.js";
-import CustomDropdown from "components/CustomDropdown/CustomDropdown.js";
 
 const useStyles = makeStyles(styles);
 
@@ -46,6 +45,33 @@ export default function HeaderLinks(props) {
             }}
           >
             Mission
+          </HashLink>
+        </Tooltip>
+      </ListItem>
+      <ListItem
+        className={classes.listItem}
+        style={{
+          height: "50px",
+          display: "flex",
+          alignItems: "center",
+        }}
+      >
+        <Tooltip
+          id="header-tokenomics"
+          title="Tokenomics"
+          placement={window.innerWidth > 959 ? "top" : "left"}
+          classes={{ tooltip: classes.tooltip }}
+        >
+          <HashLink
+            to="/#tokenomics"
+            className={classes.dropdownLink}
+            style={{
+              fontSize: "24px",
+              fontWeight: "500",
+              fontFamily: `"Roboto Slab", "Times New Roman", serif`,
+            }}
+          >
+            Tokenomics
           </HashLink>
         </Tooltip>
       </ListItem>

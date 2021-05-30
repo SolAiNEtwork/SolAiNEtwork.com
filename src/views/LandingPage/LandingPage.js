@@ -16,6 +16,7 @@ import "./LandingPage.scss";
 
 // Sections for this page
 import ProductSection from "./Sections/ProductSection.js";
+import TokenSection from "./Sections/TokenSection";
 
 const dashboardRoutes = [];
 
@@ -94,6 +95,14 @@ export default function LandingPage(props) {
       >
         <div className={classes.container}>
           <ProductSection />
+        </div>
+      </div>
+      <div
+        className={classNames(classes.main, classes.mainRaised)}
+        style={{ marginTop: "50px", marginBottom: "32px" }}
+      >
+        <div className={classes.container}>
+          <TokenSection />
         </div>
       </div>
     </div>
