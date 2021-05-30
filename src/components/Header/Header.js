@@ -64,7 +64,6 @@ export default function Header(props) {
     <Button
       className={classes.title}
       style={{
-        color: "white",
         fontSize: "24px",
         fontWeight: "500",
         fontFamily: `"Roboto Slab", "Times New Roman", serif`,
