@@ -60,7 +60,19 @@ export default function Header(props) {
     [classes.absolute]: absolute,
     [classes.fixed]: fixed,
   });
-  const brandComponent = <Button className={classes.title}>{brand}</Button>;
+  const brandComponent = (
+    <Button
+      className={classes.title}
+      style={{
+        color: "white",
+        fontSize: "24px",
+        fontWeight: "500",
+        fontFamily: `"Roboto Slab", "Times New Roman", serif`,
+      }}
+    >
+      {brand}
+    </Button>
+  );
   return (
     <AppBar className={appBarClasses}>
       <Toolbar className={classes.container}>
