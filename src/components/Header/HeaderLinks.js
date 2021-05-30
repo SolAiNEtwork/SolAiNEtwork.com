@@ -88,6 +88,35 @@ export default function HeaderLinks(props) {
         }}
       >
         <Tooltip
+          id="header-roadmap"
+          title="Roadmap"
+          placement={window.innerWidth > 959 ? "top" : "left"}
+          classes={{ tooltip: classes.tooltip }}
+        >
+          <Button color="transparent" className={classes.navLink}>
+            <HashLink
+              to="/#roadmap"
+              className={classes.dropdownLink}
+              style={{
+                fontSize: "18px",
+                fontWeight: "500",
+                fontFamily: `"Roboto Slab", "Times New Roman", serif`,
+              }}
+            >
+              Roadmap
+            </HashLink>
+          </Button>
+        </Tooltip>
+      </ListItem>
+      <ListItem
+        className={classes.listItem}
+        style={{
+          height: "50px",
+          display: "flex",
+          alignItems: "center",
+        }}
+      >
+        <Tooltip
           id="instagram-twitter"
           title="Follow us on twitter"
           placement={window.innerWidth > 959 ? "top" : "left"}

@@ -1,4 +1,7 @@
 {
   "editor.formatOnSave": true,
-  "editor.wordWrap": "on"
+  "editor.wordWrap": "on",
+  "cSpell.words": [
+    "Roadmap"
+  ]
 }
