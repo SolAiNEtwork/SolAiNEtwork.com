@@ -76,7 +76,7 @@ export default function LandingPage(props) {
               }}
             >
               <h1 className={classes.title} style={{ textAlign: "center" }}>
-                $INE: Redefining Work, Fostering Opportunities
+                $SINE: Redefining Work, Fostering Opportunities
               </h1>
               <h4 style={{ textAlign: "center" }}>
                 SINE is the token to get your work done using Artificial
