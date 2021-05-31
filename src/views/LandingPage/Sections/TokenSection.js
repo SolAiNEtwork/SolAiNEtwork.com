@@ -163,9 +163,6 @@ export default function TokenSection() {
             )}
           </Sunburst>
           <h5 className={classes.description}>{pathValue}</h5>
-          <h5 className={classes.description}>Notes</h5>
-          <h5 className={classes.description}>Some details 1</h5>
-          <h5 className={classes.description}>Some details 2</h5>
         </GridItem>
       </GridContainer>
     </div>
