@@ -15,34 +15,40 @@ import "react-vis/dist/style.css";
 const useStyles = makeStyles(styles);
 
 const myData = {
-  name: "analytics",
+  name: "",
   hex: EXTENDED_DISCRETE_COLOR_RANGE[0],
   children: [
     {
+      title: "Team",
       name: "Team and Developer",
       value: 10,
       hex: EXTENDED_DISCRETE_COLOR_RANGE[0],
     },
     {
+      title: "Promotion",
       name: "Promotion and Marketing",
       value: 10,
       hex: EXTENDED_DISCRETE_COLOR_RANGE[1],
     },
     {
+      title: "Partnerships",
       name: "Future Partnerships",
       value: 10,
       hex: EXTENDED_DISCRETE_COLOR_RANGE[2],
     },
     {
+      title: "Community",
       name: "Community Distribution",
       hex: EXTENDED_DISCRETE_COLOR_RANGE[4],
       children: [
         {
+          title: "AirDrops",
           name: "Community AirDrops",
           value: 35,
           hex: EXTENDED_DISCRETE_COLOR_RANGE[5],
         },
         {
+          title: "Rewards",
           name: "Reserved for future community rewards",
           value: 15,
           hex: EXTENDED_DISCRETE_COLOR_RANGE[3],
@@ -50,6 +56,7 @@ const myData = {
       ],
     },
     {
+      title: "Burning",
       name: "Reserved for Quarterly Burning Events",
       value: 20,
       hex: EXTENDED_DISCRETE_COLOR_RANGE[6],
@@ -58,7 +65,7 @@ const myData = {
 };
 
 const LABEL_STYLE = {
-  fontSize: "8px",
+  fontSize: "16px",
   textAnchor: "middle",
 };
 
@@ -103,13 +110,15 @@ function updateData(data, keyPath) {
 }
 
 const decoratedData = updateData(myData, false);
+const defaultFinalValue = "Tokenomics";
+const defaultPathValue = "Tokenomic Details";
 
 export default function TokenSection() {
   const classes = useStyles();
 
-  const [pathValue, setPathValue] = React.useState(false);
+  const [pathValue, setPathValue] = React.useState(defaultPathValue);
   const [data, setData] = React.useState(decoratedData);
-  const [finalValue, setFinalValue] = React.useState("SUNBRUST");
+  const [finalValue, setFinalValue] = React.useState(defaultFinalValue);
 
   return (
     <div className={classes.section} id="tokenomics">
@@ -126,13 +135,13 @@ export default function TokenSection() {
                 res[row] = true;
                 return res;
               }, {});
-              setFinalValue(path[path.length - 1]);
-              setPathValue(path.join(" > "));
+              setFinalValue(node.title);
+              setPathValue(node.name);
               setData(updateData(decoratedData, pathAsMap));
             }}
             onValueMouseOut={() => {
-              setPathValue(false);
-              setFinalValue(false);
+              setPathValue(defaultPathValue);
+              setFinalValue(defaultFinalValue);
               setData(updateData(decoratedData, false));
             }}
             style={{
