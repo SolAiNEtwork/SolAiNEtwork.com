@@ -2,6 +2,7 @@ import React from "react";
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
 import { Sunburst, LabelSeries } from "react-vis";
+import { EXTENDED_DISCRETE_COLOR_RANGE } from "react-vis/dist/theme";
 
 // core components
 import GridContainer from "components/Grid/GridContainer.js";
@@ -15,28 +16,43 @@ const useStyles = makeStyles(styles);
 
 const myData = {
   name: "analytics",
-  hex: "#12939A",
+  hex: EXTENDED_DISCRETE_COLOR_RANGE[0],
   children: [
     {
-      name: "cluster",
-      hex: "#12939A",
+      name: "Team and Developer",
+      value: 10,
+      hex: EXTENDED_DISCRETE_COLOR_RANGE[0],
+    },
+    {
+      name: "Promotion and Marketing",
+      value: 10,
+      hex: EXTENDED_DISCRETE_COLOR_RANGE[1],
+    },
+    {
+      name: "Future Partnerships",
+      value: 10,
+      hex: EXTENDED_DISCRETE_COLOR_RANGE[2],
+    },
+    {
+      name: "Community Distribution",
+      hex: EXTENDED_DISCRETE_COLOR_RANGE[4],
       children: [
-        { name: "AgglomerativeCluster", hex: "#12939A", value: 100 },
-        { name: "CommunityStructure", hex: "#12939A", value: 100 },
-        { name: "HierarchicalCluster", hex: "#12939A", value: 100 },
-        { name: "MergeEdge", hex: "#12939A", value: 100 },
+        {
+          name: "Community AirDrops",
+          value: 35,
+          hex: EXTENDED_DISCRETE_COLOR_RANGE[5],
+        },
+        {
+          name: "Reserved for future community rewards",
+          value: 15,
+          hex: EXTENDED_DISCRETE_COLOR_RANGE[3],
+        },
       ],
     },
     {
-      name: "graph",
-      hex: "#F0FAAA",
-      children: [
-        { name: "BetweennessCentrality", hex: "#F0FAAA", value: 100 },
-        { name: "LinkDistance", hex: "#F0FAAA", value: 100 },
-        { name: "MaxFlowMinCut", hex: "#F0FAAA", value: 100 },
-        { name: "ShortestPaths", hex: "#F0FAAA", value: 100 },
-        { name: "SpanningTree", hex: "#F0FAAA", value: 100 },
-      ],
+      name: "Reserved for Quarterly Burning Events",
+      value: 20,
+      hex: EXTENDED_DISCRETE_COLOR_RANGE[6],
     },
   ],
 };
