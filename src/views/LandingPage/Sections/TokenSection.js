@@ -17,14 +17,35 @@ export default function TokenSection() {
   const classes = useStyles();
   const myData = [
     {
-      angle: 1,
-      label: "Super Custom label 1",
-      subLabel: "With annotation 1",
-      radius: 2,
-      color: "red",
+      angle: 10,
+      label: "Team and Developer",
+      subLabel: "10%",
     },
-    { angle: 5, label: "Super Custom label 2", subLabel: "With annotation 2" },
-    { angle: 2, label: "Super Custom label 3", subLabel: "With annotation 3" },
+    {
+      angle: 10,
+      label: "Promotion and Marketing",
+      subLabel: "10%",
+    },
+    {
+      angle: 10,
+      label: "Future Partnerships",
+      subLabel: "10%",
+    },
+    {
+      angle: 15,
+      label: "Reserved for further community rewards",
+      subLabel: "15%",
+    },
+    {
+      angle: 35,
+      label: "Community AirDrops",
+      subLabel: "35%",
+    },
+    {
+      angle: 20,
+      label: "Reserved for Quarterly Burning Events",
+      subLabel: "20%",
+    },
   ];
 
   return (
