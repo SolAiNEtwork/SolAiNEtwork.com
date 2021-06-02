@@ -65,7 +65,7 @@ const myData = {
 };
 
 const LABEL_STYLE = {
-  fontSize: "16px",
+  fontSize: "20px",
   textAnchor: "middle",
 };
 
@@ -162,7 +162,15 @@ export default function TokenSection() {
               />
             )}
           </Sunburst>
-          <h5 className={classes.description}>{pathValue}</h5>
+          <h5
+            className={classes.description}
+            style={{
+              color: "#000000",
+              fontSize: "24px",
+            }}
+          >
+            {pathValue}
+          </h5>
         </GridItem>
       </GridContainer>
     </div>
