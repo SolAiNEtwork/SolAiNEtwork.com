@@ -20,36 +20,36 @@ const myData = {
   children: [
     {
       title: "Team",
-      name: "Team and Developer",
+      name: "Team and Developer: 10%",
       value: 10,
       hex: EXTENDED_DISCRETE_COLOR_RANGE[0],
     },
     {
       title: "Promotion",
-      name: "Promotion and Marketing",
+      name: "Promotion and Marketing: 10%",
       value: 10,
       hex: EXTENDED_DISCRETE_COLOR_RANGE[1],
     },
     {
       title: "Partnerships",
-      name: "Future Partnerships",
+      name: "Future Partnerships: 10%",
       value: 10,
       hex: EXTENDED_DISCRETE_COLOR_RANGE[2],
     },
     {
       title: "Community",
-      name: "Community Distribution",
+      name: "Community Distribution: 50%",
       hex: EXTENDED_DISCRETE_COLOR_RANGE[4],
       children: [
         {
           title: "AirDrops",
-          name: "Community AirDrops",
+          name: "Community AirDrops: 35%",
           value: 35,
           hex: EXTENDED_DISCRETE_COLOR_RANGE[5],
         },
         {
           title: "Rewards",
-          name: "Reserved for future community rewards",
+          name: "Reserved for future community rewards: 15%",
           value: 15,
           hex: EXTENDED_DISCRETE_COLOR_RANGE[3],
         },
@@ -57,7 +57,7 @@ const myData = {
     },
     {
       title: "Burning",
-      name: "Reserved for Quarterly Burning Events",
+      name: "Reserved for Quarterly Burning Events: 20%",
       value: 20,
       hex: EXTENDED_DISCRETE_COLOR_RANGE[6],
     },
@@ -111,7 +111,7 @@ function updateData(data, keyPath) {
 
 const decoratedData = updateData(myData, false);
 const defaultFinalValue = "Tokenomics";
-const defaultPathValue = "Tokenomic Details";
+const defaultPathValue = "Touch any slice to get details";
 
 export default function TokenSection() {
   const classes = useStyles();
