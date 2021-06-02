@@ -125,6 +125,15 @@ export default function TokenSection() {
       <GridContainer justify="center" align="center">
         <GridItem xs={12} sm={12} md={8}>
           <h2 className={classes.title}>Tokenomics</h2>
+          <h5
+            className={classes.description}
+            style={{
+              color: "#000000",
+              fontSize: "36px",
+            }}
+          >
+            Total Supply: 1,000,000,000 SINE
+          </h5>
           <Sunburst
             animation
             className="basic-sunburst-example"
