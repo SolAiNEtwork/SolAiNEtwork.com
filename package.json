@@ -1,7 +1,7 @@
 {
-  "name": "material-kit-react",
+  "name": "solana-artificial-intelligence-network",
   "version": "1.10.0",
-  "description": "Material Kit React. Coded by Creative Tim",
+  "description": "Solana Artificial Intelligence Network",
   "private": true,
   "main": "src/index.js",
   "dependencies": {
@@ -39,7 +39,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build && gulp licenses",
+    "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "lint:check": "eslint . --ext=js,jsx;  exit 0",
