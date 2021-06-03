@@ -48,7 +48,7 @@ In short, when you submit code changes, your submissions are understood to be un
 
 ## Reporting Issues
 
-We use GitHub Issues as the official bug tracker for the Material Kit. Here are some advices for our users that want to report an issue:
+We use GitHub Issues as the official bug tracker for the SolAiNEtwork.com. Here are some advices for our users that want to report an issue:
 
 1. Make sure that you are using the latest version of our website.
 2. Providing us reproducible steps for the issue will shorten the time it takes for it to be fixed.
